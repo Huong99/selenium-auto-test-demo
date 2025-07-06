@@ -10,7 +10,6 @@ public class OrderLocator {
     private OrderLocator() {
     }
 
-    ;
 
     /* Create Order */
     String txtCustomerId = "ID|form_item_customerId";
@@ -24,6 +23,7 @@ public class OrderLocator {
     String btnAddXPath = "//button[@testek = 'btn-add']";
     String txtOrderCodeXPath = "//input[@placeholder = 'Mã đơn hàng']";
     String txtErrorMessageXPath = "//div[normalize-space() = 'Error message' and contains(@class, 'w-full')]//textarea";
+    String lblSuccessMessageXPath = "//span[normalize-space() = 'Thêm đơn hàng thành công']";
 
 
 }

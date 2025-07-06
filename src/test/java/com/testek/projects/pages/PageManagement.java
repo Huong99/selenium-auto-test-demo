@@ -1,6 +1,7 @@
 package com.testek.projects.pages;
 
 import com.testek.driver.DriverManager;
+import com.testek.projects.pages.pages.CreatePage;
 import com.testek.projects.pages.pages.HomePage;
 import com.testek.projects.pages.pages.LoginPage;
 
@@ -23,5 +24,11 @@ public class PageManagement {
     public static HomePage gotoHomePage() {
         return new HomePage();
     }
+
+    /* Go to the create page */
+    public static CreatePage gotoCreatePage() {
+        return new CreatePage();
+    }
+
 
 }

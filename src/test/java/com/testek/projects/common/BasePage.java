@@ -7,6 +7,7 @@ import com.testek.driver.DriverManager;
 import com.testek.consts.ProjectConst;
 import com.testek.projects.pages.pages.OrderPage;
 import com.testek.projects.pages.pages.ProductPage;
+import com.testek.projects.pages.pages.SupplierPage;
 import io.qameta.allure.Step;
 import lombok.Getter;
 import lombok.Setter;
@@ -64,6 +65,27 @@ public class BasePage extends WebUI {
         ProjectConst.ModuleURL module = ProjectConst.ModuleURL.ORDER;
         goToSpecificURL(module.getPath(), module.getName());
         return new OrderPage();
+    }
+
+    /**
+     * Access the 'Order' page
+     */
+    @Step("Go to 'Supplier' Page")
+    public SupplierPage gotoSupplierPage() {
+        ProjectConst.ModuleURL module = ProjectConst.ModuleURL.SUPPLIER;
+        goToSpecificURL(module.getPath(), module.getName());
+        return new SupplierPage();
+    }
+
+    /**
+     * Wait for debug
+     */
+    public void waitForDebug(){
+        try {
+            Thread.sleep(1000); // Đợi 1000ms = 1 giây
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     //endregion
 

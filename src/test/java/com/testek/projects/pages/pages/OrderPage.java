@@ -52,6 +52,9 @@ public class OrderPage extends BasePage {
      * Verify the order creation
      */
     public void verifyOrderCreation() {
+        // Verify success message
+        getWaitDriver().until(ExpectedConditions.visibilityOf(orderObjects.findSuccessMessage()));
+
         getWaitDriver().until(ExpectedConditions.attributeToBeNotEmpty(orderObjects.findOrderCodeEle(), "value"));
         String codeOrder = orderObjects.findOrderCodeEle().getAttribute("value");
         getWaitDriver().until(ExpectedConditions.attributeToBeNotEmpty(orderObjects.findErrorMessageEle(), "value"));

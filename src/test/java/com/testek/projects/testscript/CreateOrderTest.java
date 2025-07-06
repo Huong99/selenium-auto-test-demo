@@ -4,8 +4,6 @@ import com.testek.annotations.FrameAnnotation;
 import com.testek.consts.AuthorType;
 import com.testek.consts.FrameConst;
 import com.testek.projects.common.TestBase;
-import com.testek.projects.dataprovider.model.CreateProductModel;
-import com.testek.projects.dataprovider.providers.CreateProductProvider;
 import com.testek.projects.pages.pages.HomePage;
 import com.testek.projects.pages.pages.OrderPage;
 import org.testng.annotations.BeforeClass;
@@ -29,8 +27,8 @@ public class CreateOrderTest extends TestBase {
     }
 
     @FrameAnnotation(category = {FrameConst.CategoryType.REGRESSION}, author = {AuthorType.HuongPham}, reviewer = {AuthorType.HuongPham})
-    @Test(description = "Verify creating a new order", dataProvider = "TK_CreateProduct_001_Valid", dataProviderClass = CreateProductProvider.class)
-    public void TK_CreateProduct_001_Valid(CreateProductModel createProductModel) {
+    @Test(description = "Verify creating a new order")
+    public void TK_CreateOrder_001_Valid() {
         orderPage.verifyOrderPageDisplay(); // Verify order page hien thi
         orderPage.clickToCreateOrder()      // Click button Create Order
                 .fillOrderInfo()

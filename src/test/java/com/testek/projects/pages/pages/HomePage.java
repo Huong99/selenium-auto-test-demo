@@ -2,6 +2,7 @@ package com.testek.projects.pages.pages;
 
 import com.testek.driver.DriverManager;
 import com.testek.projects.common.BasePage;
+import com.testek.projects.pages.PageManagement;
 import com.testek.projects.pages.objects.HomePageObjects;
 import org.openqa.selenium.support.PageFactory;
 
@@ -23,5 +24,14 @@ public class HomePage extends BasePage {
         waitForElementVisible(homePageObjects.findHeader());
         verifyElementTextEqual(homePageObjects.findHeader(), "TESTEK - KIỂM THỬ THỰC CHIẾN");
     }
+
+    public CreatePage clickToCreateSupplierPage(){
+        clickTo(homePageObjects.findInsertButton());
+        clickTo(homePageObjects.findCreateSupplier());
+
+        return PageManagement.gotoCreatePage();
+    }
+
+
 
 }

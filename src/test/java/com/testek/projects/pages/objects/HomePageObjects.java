@@ -19,4 +19,10 @@ public class HomePageObjects extends BaseObjects {
         return findWebElement(homePageLocator.getLblHeader());
     }
 
+    public WebElement findInsertButton(){return findWebElement(homePageLocator.getBtnInsert());}
+
+    public WebElement findCreateSupplier(){
+        return findWebElement(homePageLocator.getLblCreateSupplier());
+    }
+
 }

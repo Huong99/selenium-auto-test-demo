@@ -12,4 +12,6 @@ public class HomePageLocator extends BaseLocator{
 
 
     String lblHeader = "//div[@id='about-me']/h2";
+    String btnInsert = "//div[contains(@class, 'icon-insert')]";
+    String lblCreateSupplier = "//li//div[normalize-space()='Nhà cung cấp']";
 }

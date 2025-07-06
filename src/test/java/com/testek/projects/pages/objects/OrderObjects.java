@@ -55,6 +55,10 @@ public class OrderObjects extends BaseObjects {
         return findWebElement(orderLocator.getTxtErrorMessageXPath());
     }
 
+    public WebElement findSuccessMessage(){
+        return findWebElement(orderLocator.getLblSuccessMessageXPath());
+    }
+
     // Select Khách hàng
     public OrderObjects selectCustomer() {
         clickTo(findCustomerEle(), "Customer");
