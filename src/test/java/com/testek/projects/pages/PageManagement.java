@@ -1,7 +1,7 @@
 package com.testek.projects.pages;
 
 import com.testek.driver.DriverManager;
-import com.testek.projects.pages.pages.CreatePage;
+import com.testek.projects.pages.pages.CreateSupplierPage;
 import com.testek.projects.pages.pages.HomePage;
 import com.testek.projects.pages.pages.LoginPage;
 
@@ -26,8 +26,8 @@ public class PageManagement {
     }
 
     /* Go to the create page */
-    public static CreatePage gotoCreatePage() {
-        return new CreatePage();
+    public static CreateSupplierPage gotoCreateSupplierPage() {
+        return new CreateSupplierPage();
     }
 
 

@@ -3,11 +3,11 @@ package com.testek.projects.pages.locator;
 import lombok.Getter;
 
 @Getter
-public class CreateLocator extends BaseLocator {
+public class CreateSupplierLocator extends BaseLocator {
     @Getter
-    public static CreateLocator instance = new CreateLocator();
+    public static CreateSupplierLocator instance = new CreateSupplierLocator();
 
-    private CreateLocator() {
+    private CreateSupplierLocator() {
     }
 
     String lblTitleCreateSupplier = "//div[normalize-space() = 'Thêm nhà cung cấp' and contains(@class, 'header')]";

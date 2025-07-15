@@ -25,11 +25,11 @@ public class HomePage extends BasePage {
         verifyElementTextEqual(homePageObjects.findHeader(), "TESTEK - KIỂM THỬ THỰC CHIẾN");
     }
 
-    public CreatePage clickToCreateSupplierPage(){
+    public CreateSupplierPage clickToCreateSupplierPage(){
         clickTo(homePageObjects.findInsertButton());
         clickTo(homePageObjects.findCreateSupplier());
 
-        return PageManagement.gotoCreatePage();
+        return PageManagement.gotoCreateSupplierPage();
     }
 
 

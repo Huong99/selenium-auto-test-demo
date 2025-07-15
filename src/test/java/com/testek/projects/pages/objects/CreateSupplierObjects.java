@@ -1,17 +1,17 @@
 package com.testek.projects.pages.objects;
 
-import com.testek.projects.pages.locator.CreateLocator;
+import com.testek.projects.pages.locator.CreateSupplierLocator;
 import lombok.Getter;
 import org.openqa.selenium.WebElement;
 
-public class CreateObjects extends BaseObjects {
+public class CreateSupplierObjects extends BaseObjects {
     @Getter
-    public static CreateObjects instance = new CreateObjects();
+    public static CreateSupplierObjects instance = new CreateSupplierObjects();
 
-    private final CreateLocator createLocator;
+    private final CreateSupplierLocator createLocator;
 
-    private CreateObjects() {
-        createLocator = CreateLocator.getInstance();
+    private CreateSupplierObjects() {
+        createLocator = CreateSupplierLocator.getInstance();
     }
 
     public WebElement findSupplierCodeEle() {
@@ -63,49 +63,49 @@ public class CreateObjects extends BaseObjects {
     }
 
     // Input Supplier Name
-    public CreateObjects inputSupplierName(String value) {
+    public CreateSupplierObjects inputSupplierName(String value) {
         this.inputText(findSupplierNameEle(), "Supplier Name", value);
         return this;
     }
 
 
     // Input Supplier Phone
-    public CreateObjects inputSupplierPhone(String value) {
+    public CreateSupplierObjects inputSupplierPhone(String value) {
         this.inputText(findSupplierPhoneEle(), "Supplier Phone", value);
         return this;
     }
 
     // Input Supplier Contact
-    public CreateObjects inputSupplierContact(String value) {
+    public CreateSupplierObjects inputSupplierContact(String value) {
         this.inputText(findSupplierContactEle(), "Supplier Contact", value);
         return this;
     }
 
     // Input Supplier City
-    public CreateObjects inputSupplierCity(String value) {
+    public CreateSupplierObjects inputSupplierCity(String value) {
         this.inputText(findSupplierCityEle(), "Supplier City", value);
         return this;
     }
 
     // Input Supplier Country
-    public CreateObjects inputSupplierCountry(String value) {
+    public CreateSupplierObjects inputSupplierCountry(String value) {
         this.inputText(findSupplierCountryEle(), "Supplier Country", value);
         return this;
     }
 
     // Input Supplier Address
-    public CreateObjects inputSupplierAddress(String value) {
+    public CreateSupplierObjects inputSupplierAddress(String value) {
         this.inputText(findSupplierAddressEle(), "Supplier Address", value);
         return this;
     }
 
     // Input Supplier Postal Code
-    public CreateObjects inputSupplierPostalCode(String value) {
+    public CreateSupplierObjects inputSupplierPostalCode(String value) {
         this.inputText(findSupplierPostalCodeEle(), "Supplier Postal Code", value);
         return this;
     }
 
-    public CreateObjects clickAddMoreSupplierButton() {
+    public CreateSupplierObjects clickAddMoreSupplierButton() {
         clickTo(findAddMoreSupplierButtonEle(), "Add More Supplier Button");
         return this;
     }

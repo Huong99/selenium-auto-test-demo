@@ -2,7 +2,7 @@ package com.testek.projects.pages.pages;
 
 import com.testek.driver.DriverManager;
 import com.testek.projects.common.BasePage;
-import com.testek.projects.pages.objects.CreateObjects;
+import com.testek.projects.pages.objects.CreateSupplierObjects;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,14 +13,14 @@ import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Slf4j
-public class CreatePage extends BasePage {
-    private final CreateObjects createObjects;
+public class CreateSupplierPage extends BasePage {
+    private final CreateSupplierObjects createObjects;
 
-    public CreatePage() {
+    public CreateSupplierPage() {
         webDriver = DriverManager.getDriver();
         PageFactory.initElements(webDriver, this);
 
-        createObjects = CreateObjects.getInstance();
+        createObjects = CreateSupplierObjects.getInstance();
     }
 
     public void verifyCreateSupplierPageDisplay() {
@@ -60,7 +60,7 @@ public class CreatePage extends BasePage {
         return supplierInfo;
     }
 
-    public CreatePage clickToCreateMoreSupplier() {
+    public CreateSupplierPage clickToCreateMoreSupplier() {
         createObjects.clickAddMoreSupplierButton();
         return this;
     }
