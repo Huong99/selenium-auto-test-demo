@@ -4,7 +4,7 @@ package com.testek.projects.pages.locator;
 import lombok.Getter;
 
 @Getter
-public class LoginLocator {
+public class LoginLocator extends BaseLocator{
     @Getter
     public static LoginLocator instance = new LoginLocator();
 
