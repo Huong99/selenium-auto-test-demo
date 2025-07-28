@@ -4,13 +4,15 @@ import com.testek.annotations.FrameAnnotation;
 import com.testek.consts.AuthorType;
 import com.testek.consts.FrameConst;
 import com.testek.projects.common.TestBase;
+import com.testek.projects.dataprovider.model.TLoginModel;
+import com.testek.projects.dataprovider.providers.TLoginProvider;
 import com.testek.projects.pages.pages.DashboardPage;
 import com.testek.projects.pages.pages.VLoginPage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class VLoginTest extends TestBase {
+public class ValidLoginTest extends TestBase {
     VLoginPage loginPage;
     DashboardPage dashboardPage;
 
@@ -26,11 +28,13 @@ public class VLoginTest extends TestBase {
     }
 
     @FrameAnnotation(category = {FrameConst.CategoryType.REGRESSION}, author = {AuthorType.HuongPham}, reviewer = {AuthorType.HuongPham})
-    @Test(description = "Verify login")
-    public void TK_VLogin_001_Valid() {
+    @Test(description = "Verify valid login", dataProvider = "Testek_Login_001_Huong_Valid", dataProviderClass = TLoginProvider.class)
+    public void Testek_Login_001_Huong_Valid(TLoginModel data) {
+        System.out.println("UserName: " + data.getUserName().getValue() + "\nPassword: " + data.getPassword().getValue());
+
         loginPage.verifyLoginPageDisplay();        // Verify login page displayed
 
-        dashboardPage = loginPage.login("admin_com_role", "aA12345678@"); // Login
+        dashboardPage = loginPage.login(data.getUserName().getValue(), data.getPassword().getValue()); // Login
 
         dashboardPage.verifyDashboardPageDisplay();     // Verify dashboard page displayed
 

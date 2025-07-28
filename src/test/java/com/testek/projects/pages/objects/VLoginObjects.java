@@ -23,6 +23,10 @@ public class VLoginObjects extends BaseObjects{
         return findWebElement(loginLocator.getBtnLogin());
     }
 
+    public WebElement findLoginFailedMessage(){
+        return findWebElement(loginLocator.getLblLoginFailedMessage());
+    }
+
     public VLoginObjects inputUserName(String userName){
         this.inputText(findEdtUserName(), "UserName", userName);
         return this;

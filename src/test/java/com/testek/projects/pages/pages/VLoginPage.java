@@ -25,4 +25,9 @@ public class VLoginPage extends BasePage {
         assertTrueCondition(btnLoginEle, btnLoginEle.isDisplayed(), FrameConst.FailureHandling.STOP_ON_FAILURE, "Not displayed Login Page!!!");
     }
 
+    public void verifyLoginFailedMessageDisplay(){
+        WebElement loginFailedMessage = loginObjects.findLoginFailedMessage();
+        assertEqualCondition(loginFailedMessage, loginFailedMessage.getText(),"Đăng nhập thất bại", FrameConst.FailureHandling.CONTINUE_ON_FAILURE, "Not displayed message when login failed!!!");
+    }
+
 }

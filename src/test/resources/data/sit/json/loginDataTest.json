@@ -1,0 +1,132 @@
+{
+  "Testek_Login_001_Huong_Valid": [
+    {
+      "Description": "Verify the login function with admin roles",
+      "Id": "Valid-Admin Role",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "UserName": "admin_com_role",
+        "Password": "aA12345678@"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify the login function with user roles",
+      "Id": "Valid-User Role",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "UserName": "user_com_role",
+        "Password": "aA12345678@"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify the login function with user roles",
+      "Id": "Valid-Guest Role",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "UserName": "guest_role",
+        "Password": "aA12345678@"
+      },
+      "detail": {}
+    }
+  ],
+  "Testek_Login_002_Login_Invalid": [
+    {
+      "Description": "Verify the login function with wrong username",
+      "Id": "Wrong username",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "UserName": "user",
+        "Password": "aA12345678@"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify the login function with SQL injection in username textbox",
+      "Id": "Without username",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "UserName": "' OR 1=1 --",
+        "Password": "aA12345678@"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify the login function with wrong password",
+      "Id": "Wrong password",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "UserName": "admin_com_role",
+        "Password": "aA123"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify the login function with space in beginning and the end of password",
+      "Id": "Password with space",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "UserName": "admin_com_role",
+        "Password": " aA12345678@ "
+      },
+      "detail": {}
+    }
+  ]
+}

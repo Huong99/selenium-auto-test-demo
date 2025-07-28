@@ -10,4 +10,5 @@ public class VLoginLocator extends BaseLocator{
     String edtUserName = "ID|normal_login_username";
     String edtPassword = "ID|normal_login_password";
     String btnLogin = "//button[@type='submit']";
+    String lblLoginFailedMessage = "//div[contains(@class, 'ant-message-warning')]";
 }
