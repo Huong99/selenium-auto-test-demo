@@ -1,0 +1,114 @@
+{
+  "HuongPham_CreateProduct_001_Valid": [
+    {
+      "Description": "Verify create new product success 01",
+      "Id": "Valid-Washer01",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Category": "Máy giặt",
+        "Supplier": "Panasonic VietNam",
+        "Code": "AUTO_PRODUCT_HUONGPHAM_",
+        "Unit": "Cái",
+        "Name": "Máy giặt Pana - ",
+        "Description": "Máy giặt Panasonic"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new product success 02",
+      "Id": "Valid-Phone01",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Category": "Điện thoại",
+        "Supplier": "Apple",
+        "Code": "AUTO_PRODUCT_HUONGPHAM_",
+        "Unit": "Chiếc",
+        "Name": "Iphone 11 - ",
+        "Description": "Iphone 11 - 20xx"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new product success 03",
+      "Id": "Valid-Fridge-01",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Category": "Tủ lạnh",
+        "Supplier": "LG VietNam",
+        "Code": "AUTO_PRODUCT_HUONGPHAM_",
+        "Unit": "Cái",
+        "Name": "Tủ lạnh A",
+        "Description": "Tủ lạnh 50ml"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new product success 04",
+      "Id": "Valid-Tivi01",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Category": "Tivi",
+        "Supplier": "LG VietNam",
+        "Code": "AUTO_PRODUCT_HUONGPHAM_",
+        "Unit": "Chiếc",
+        "Name": "Tivi LG ",
+        "Description": "Tivi LG Vietnam"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new product success 05",
+      "Id": "Valid-Laptop01",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Category": "Laptop",
+        "Supplier": "Canon VietNam",
+        "Code": "AUTO_PRODUCT_HUONGPHAM_",
+        "Unit": "Chiếc",
+        "Name": "Laptop dell",
+        "Description": "Laptop dell 15 inch"
+      },
+      "detail": {}
+    }
+  ]
+}

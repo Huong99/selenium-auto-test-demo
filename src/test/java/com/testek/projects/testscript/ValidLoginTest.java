@@ -34,9 +34,21 @@ public class ValidLoginTest extends TestBase {
 
         loginPage.verifyLoginPageDisplay();        // Verify login page displayed
 
-        dashboardPage = loginPage.login(data.getUserName().getValue(), data.getPassword().getValue()); // Login
+        dashboardPage = loginPage.login(data); // Login
 
         dashboardPage.verifyDashboardPageDisplay();     // Verify dashboard page displayed
 
+    }
+
+    @FrameAnnotation(category = {FrameConst.CategoryType.REGRESSION}, author = {AuthorType.HuongPham}, reviewer = {AuthorType.HuongPham})
+    @Test(description = "Verify invalid login", dataProvider = "Testek_Login_002_Login_Invalid", dataProviderClass = TLoginProvider.class)
+    public void Testek_Login_002_Login_Invalid(TLoginModel data) {
+        System.out.println("UserName: " + data.getUserName().getValue() + "\nPassword: " + data.getPassword().getValue());
+
+        loginPage.verifyLoginPageDisplay();        // Verify login page displayed
+
+        loginPage.login(data.getUserName().getValue(), data.getPassword().getValue());  // Login
+
+        loginPage.verifyLoginFailedMessageDisplay(); // Verify displayed login failed message
     }
 }

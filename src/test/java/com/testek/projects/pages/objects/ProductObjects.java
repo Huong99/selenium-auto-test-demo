@@ -121,6 +121,11 @@ public class ProductObjects extends BaseObjects {
         verifyElementTextEqual(lblMessage, getLanguageValue("ProductCreateSuccessMessage"));
     }
 
+    public void verifySuccessMessage() {
+        WebElement lblMessage = findMsgCreateProduct();
+        assertEqualCondition(lblMessage, lblMessage.getText(), "Thêm sản phẩm thành công", FailureHandling.CONTINUE_ON_FAILURE, "Verify success message display:");
+    }
+
 
     /**
      * Get the row content element by type
