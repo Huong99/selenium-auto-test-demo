@@ -31,7 +31,7 @@ public class SupplierPage extends BasePage {
         supplierObjects.inputKeyword(info.get("name"))
                 .clickSearchButton();
 
-        waitForDebug();
+        waitForDebug(1000);
         getWaitDriver().until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='model-loading']")));
 
         // Verify info of Supplier

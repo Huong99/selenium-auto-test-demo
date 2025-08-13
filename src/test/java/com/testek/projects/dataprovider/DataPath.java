@@ -10,4 +10,5 @@ public interface DataPath {
     String DATA_CREATE_PRODUCT = "data/" + env + "/json/createProduct.json";
     String DATA_LOGIN_DEMO_01 = "data/sit/json/loginDataTest.json";
     String DATA_CREATE_PRODUCT_H = "data/sit/json/createProductDataTest.json";
+    String DATA_CREATE_CUSTOMER = "data/sit/json/createCustomerData.json";
 }

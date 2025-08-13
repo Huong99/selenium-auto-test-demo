@@ -1,0 +1,319 @@
+{
+  "TK_CreateCustomer_001_Valid": [
+    {
+      "Description": "Verify create new customer success 01",
+      "Id": "Customer 01",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG",
+        "Phone": "03169164354",
+        "Email": "huongpham@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 02",
+      "Id": "Customer 02",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_02_",
+        "Phone": "03169164354",
+        "Email": "huongpham_02@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Thai Lan",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 03",
+      "Id": "Customer 03",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_03",
+        "Phone": "03169164354",
+        "Email": "huongpham_03@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 04",
+      "Id": "Customer 04",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_04",
+        "Phone": "03169164354",
+        "Email": "huongpham_04@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 05",
+      "Id": "Customer 05",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_05",
+        "Phone": "03169164354",
+        "Email": "huongpham_05@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 06",
+      "Id": "Customer 06",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_06",
+        "Phone": "03169164354",
+        "Email": "huongpham_06@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 07",
+      "Id": "Customer 07",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_07",
+        "Phone": "03169164354",
+        "Email": "huongpham_07@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 08",
+      "Id": "Customer 08",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_08",
+        "Phone": "03169164354",
+        "Email": "huongpham_08@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 09",
+      "Id": "Customer 09",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_09",
+        "Phone": "03169164354",
+        "Email": "huongpham_09@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer success 10",
+      "Id": "Customer 10",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_10",
+        "Phone": "03169164354",
+        "Email": "huongpham_10@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    }
+  ],
+  "TK_CreateCustomer_002_InvalidPhone": [
+    {
+      "Description": "Verify create new customer failed with invalid phone number 01",
+      "Id": "Invalid phone 01",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_invalid_phone_01",
+        "Phone": "09a1234567",
+        "Email": "huongpham@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer failed with invalid phone number 02",
+      "Id": "Invalid phone 02",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_invalid_phone_02",
+        "Phone": "0987.654.321",
+        "Email": "huongpham@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    },
+    {
+      "Description": "Verify create new customer failed with invalid phone number 03",
+      "Id": "Invalid phone 03",
+      "Category": "REGRESSION",
+      "Executed": true,
+      "AccountTest": "",
+      "TestScenario": "",
+      "Preconditions": "",
+      "master": {
+        "config": {
+          "isFill": [],
+          "isVerify": []
+        },
+        "Name": "HUONG_invalid_phone_03",
+        "Phone": "0987+654321",
+        "Email": "huongpham@gmail.com",
+        "Contact": "03169164354",
+        "Country": "Việt Nam",
+        "City": "Hà Nội",
+        "Address": "Cầu Giấy",
+        "PostalCode": "10000"
+      },
+      "detail": {}
+    }
+  ]
+
+}

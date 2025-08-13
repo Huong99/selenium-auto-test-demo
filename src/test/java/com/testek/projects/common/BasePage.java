@@ -5,6 +5,7 @@ import com.testek.consts.FrameConst.LogType;
 import com.testek.controller.WebUI;
 import com.testek.driver.DriverManager;
 import com.testek.consts.ProjectConst;
+import com.testek.projects.pages.pages.CustomerPage;
 import com.testek.projects.pages.pages.OrderPage;
 import com.testek.projects.pages.pages.ProductPage;
 import com.testek.projects.pages.pages.SupplierPage;
@@ -68,7 +69,7 @@ public class BasePage extends WebUI {
     }
 
     /**
-     * Access the 'Order' page
+     * Access the 'Supplier' page
      */
     @Step("Go to 'Supplier' Page")
     public SupplierPage gotoSupplierPage() {
@@ -78,11 +79,21 @@ public class BasePage extends WebUI {
     }
 
     /**
+     * Access the 'Supplier' page
+     */
+    @Step("Go to 'Customer' Page")
+    public CustomerPage gotoCustomerPage() {
+        ProjectConst.ModuleURL module = ProjectConst.ModuleURL.CUSTOMER;
+        goToSpecificURL(module.getPath(), module.getName());
+        return new CustomerPage();
+    }
+
+    /**
      * Wait for debug
      */
-    public void waitForDebug(){
+    public void waitForDebug(long time){
         try {
-            Thread.sleep(1000); // Đợi 1000ms = 1 giây
+            Thread.sleep(time); // Đợi 1000ms = 1 giây
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
