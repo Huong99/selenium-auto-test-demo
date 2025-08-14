@@ -5,10 +5,7 @@ import com.testek.consts.FrameConst.LogType;
 import com.testek.controller.WebUI;
 import com.testek.driver.DriverManager;
 import com.testek.consts.ProjectConst;
-import com.testek.projects.pages.pages.CustomerPage;
-import com.testek.projects.pages.pages.OrderPage;
-import com.testek.projects.pages.pages.ProductPage;
-import com.testek.projects.pages.pages.SupplierPage;
+import com.testek.projects.pages.pages.*;
 import io.qameta.allure.Step;
 import lombok.Getter;
 import lombok.Setter;
@@ -86,6 +83,16 @@ public class BasePage extends WebUI {
         ProjectConst.ModuleURL module = ProjectConst.ModuleURL.CUSTOMER;
         goToSpecificURL(module.getPath(), module.getName());
         return new CustomerPage();
+    }
+
+    /**
+     * Access the 'Category' page
+     */
+    @Step("Go to 'Category' Page")
+    public CategoryPage gotoCategoryPage() {
+        ProjectConst.ModuleURL module = ProjectConst.ModuleURL.CATEGORY;
+        goToSpecificURL(module.getPath(), module.getName());
+        return new CategoryPage();
     }
 
     /**

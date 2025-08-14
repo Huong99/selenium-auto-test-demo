@@ -16,7 +16,8 @@ public class ProjectConst {
         PRODUCT("Product", APP_DOMAIN + "/product"),
         ORDER("Order", APP_DOMAIN + "/order"),
         SUPPLIER("Supplier", APP_DOMAIN + "/supplier"),
-        CUSTOMER("Customer", APP_DOMAIN + "/customer");
+        CUSTOMER("Customer", APP_DOMAIN + "/customer"),
+        CATEGORY("Category", APP_DOMAIN + "/category");
 
         private final String name;
         private final String path;
