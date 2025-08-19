@@ -50,6 +50,7 @@ public class CreateCustomerTest extends TestBase {
         customerPage.searchCustomer(data)
                 .verifyCustomerInfo(data);
 
+
     }
 
     @FrameAnnotation(category = {FrameConst.CategoryType.REGRESSION}, author = {AuthorType.HuongPham}, reviewer = {AuthorType.Vincent})
