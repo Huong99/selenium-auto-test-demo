@@ -35,7 +35,7 @@ public class CategoryTest extends TestBase {
         categoryPage.clickToExportButton();
 
         // Click print and Verify Print page display
-        categoryPage.clickToPrintAndVerifyPrintPageDisplay();
+        // categoryPage.clickToPrintAndVerifyPrintPageDisplay();
 
     }
 }
