@@ -32,24 +32,20 @@ public class CreateCustomerTest extends TestBase {
     @FrameAnnotation(category = {FrameConst.CategoryType.REGRESSION}, author = {AuthorType.HuongPham}, reviewer = {AuthorType.Vincent})
     @Test(description = "Verify creating customer", dataProvider = "TK_CreateCustomer_001_Valid", dataProviderClass = CreateCustomerProvider.class)
     public void TK_CreateCustomer_001_Valid(CreateCustomerModel data) {
-        // Verify Customer page display
-        customerPage.verifyCustomerPageDisplayed();
+        customerPage.verifyCustomerPageDisplayed();     // Verify Customer page display
 
         createCustomerPage = customerPage.clickToCreateCustomer();       // Click Create Customer button
 
         createCustomerPage.verifyCreateCustomerPageDisplay();     // Verify Create customer Page display
 
-        // Fill info to create customer
-        createCustomerPage.fillCustomerInfoAndClickAdd(data)
-                .verifyCustomerCreationSuccess(data);  // Verify create successfully
+        createCustomerPage.fillCustomerInfoAndClickAdd(data)        // Fill info to create customer
+                .verifyCustomerCreationSuccess(data);               // Verify create successfully
 
-        // Access customer page
-        customerPage = createCustomerPage.gotoCustomerPage();
+        customerPage = createCustomerPage.gotoCustomerPage();      // Access customer page
 
         // Search and verify info
         customerPage.searchCustomer(data)
                 .verifyCustomerInfo(data);
-
 
     }
 

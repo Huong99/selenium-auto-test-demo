@@ -36,7 +36,6 @@ public class CreateProductTest extends TestBase {
                 .fillProductInfo(createProductModel)
                 .clickToCreateProduct();
 
-        // Verify the login successfully
         productPage.verifyProductCreation();        // Verify popup success hien thi
     }
 
