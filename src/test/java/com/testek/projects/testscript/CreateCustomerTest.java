@@ -49,6 +49,7 @@ public class CreateCustomerTest extends TestBase {
 
     }
 
+
     @FrameAnnotation(category = {FrameConst.CategoryType.REGRESSION}, author = {AuthorType.HuongPham}, reviewer = {AuthorType.Vincent})
     @Test(description = "Verify creating customer with invalid phone number", dataProvider = "TK_CreateCustomer_002_InvalidPhone", dataProviderClass = CreateCustomerProvider.class)
     public void TK_CreateCustomer_002_InvalidPhone(CreateCustomerModel data) {
